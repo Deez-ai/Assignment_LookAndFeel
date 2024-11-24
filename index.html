@@ -1,1 +1,46 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicBookFinder - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>MagicBookFinder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="manage.html">Manage Books</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to MagicBookFinder!</h2>
+        <p>Discover your next magical adventure in the world of fantasy books.</p>
+        <div id="featured-books">
+            <h3>Featured Books</h3>
+            <div class="book-display">
+                <img src="img/dragon-liar.jpg" alt="The Dragon's Lair Cover" width="150" height="200">
+                <img src="img/wizard-spell.jpg" alt="Wizard's First Spell Cover" width="150" height="200">
+                <img src="img/scales-sorcery.jpg" alt="Scales and Sorcery Cover" width="150" height="200">
+            </div>
+        </div>
+        <div id="preferences">
+            <h3>What do you like?</h3>
+            <input type="checkbox" id="dragons" name="dragons">
+            <label for="dragons">Dragons</label><br>
+            <input type="checkbox" id="magic" name="magic">
+            <label for="magic">Magic</label><br>
+            <input type="checkbox" id="wizards" name="wizards">
+            <label for="wizards">Wizards</label><br>
+            <button onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+        <div id="recommendations"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html><!--Your HTML code here-->
